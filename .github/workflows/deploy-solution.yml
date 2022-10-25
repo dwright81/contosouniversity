@@ -22,6 +22,7 @@ jobs:
           name: packed-solution
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
-          environment-url: https://org4b8ff588.crm.dynamics.com/
-          user-name: ${{  secrets.USERNAME  }}
+          environment-url: https://org1342dfc4.crm.dynamics.com/
+          user-name: ${{ secrets.USERNAME }}
+          password-secrets: ${{ secrets.PASSWORD }}
           solution-file: contoso_university_core_managed.zip
