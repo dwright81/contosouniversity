@@ -18,10 +18,6 @@ jobs:
           name: packed-solution
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
-          workflow: pack-solution.yml
-          name: packed-solution
-      - uses: microsoft/powerplatform-actions/import-solution@v0
-        with:
           environment-url: https://org1342dfc4.crm.dynamics.com/
           user-name: ${{ secrets.USERNAME }}
           password-secrets: ${{ secrets.PASSWORD }}
